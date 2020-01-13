@@ -2,12 +2,17 @@ import "./App.css";
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import { connect } from "react-redux";
+import Toolbar from "./components/Toolbar";
+import LoginPage from "./components/LoginPage";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Switch></Switch>
+        <Toolbar />
+        <Switch>
+          <Route path="/login" component={LoginPage} />
+        </Switch>
       </div>
     );
   }
