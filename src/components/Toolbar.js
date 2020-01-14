@@ -5,11 +5,28 @@ class Toolbar extends Component {
   render() {
     return (
       <div>
-        <Link to="/login">Login</Link>
-        <br />
-        <Link to="/signup">Sign Up</Link>
-        <br />
-        <Link to="/chat">Chat</Link>
+        <ul>
+          <li style={{ float: "right" }}>
+            <Link className="a" to="/login">
+              Login
+            </Link>
+          </li>
+          <li style={{ float: "right" }}>
+            <Link className="a" to="/signup">
+              Sign Up
+            </Link>
+          </li>
+          <li style={{ float: "right" }}>
+            <Link className="a" to="/chat">
+              Chat
+            </Link>
+          </li>
+          <li>
+            <Link className="a" to="/quiz">
+              Sorting Hat
+            </Link>
+          </li>
+        </ul>
       </div>
     );
   }
