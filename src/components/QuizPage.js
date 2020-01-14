@@ -94,14 +94,16 @@ class QuizPage extends Component {
     return (
       <div>
         <h1>Sorting Hat</h1>
-        <Quiz
-          answer={this.state.answer}
-          answerOptions={this.state.answerOptions}
-          questionId={this.state.questionId}
-          question={this.state.question}
-          questionTotal={quizQuestions.length}
-          onAnswerSelected={this.handleAnswerSelected}
-        />
+        <p>
+          <Quiz
+            answer={this.state.answer}
+            answerOptions={this.state.answerOptions}
+            questionId={this.state.questionId}
+            question={this.state.question}
+            questionTotal={quizQuestions.length}
+            onAnswerSelected={this.handleAnswerSelected}
+          />
+        </p>
       </div>
     );
   }

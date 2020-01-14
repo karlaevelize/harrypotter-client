@@ -11,14 +11,23 @@ export class Quiz extends React.Component {
 
   renderAnswerOptions(key) {
     return (
-      <AnswerOption
-        key={key.content}
-        answerContent={key.content}
-        answerType={key.type}
-        answer={this.props.answer}
-        questionId={this.props.questionId}
-        onAnswerSelected={this.props.onAnswerSelected}
-      />
+      <p
+        style={{
+          border: "1px solid black",
+          display: "inline-block",
+          width: "150px",
+          height: "50px"
+        }}
+      >
+        <AnswerOption
+          key={key.content}
+          answerContent={key.content}
+          answerType={key.type}
+          answer={this.props.answer}
+          questionId={this.props.questionId}
+          onAnswerSelected={this.props.onAnswerSelected}
+        />
+      </p>
     );
   }
 
