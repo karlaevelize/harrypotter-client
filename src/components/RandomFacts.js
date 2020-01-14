@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import fetchRandomFact from "../store/random-facts/actions";
+import fetchRandomQuote from "../store/random-quotes/actions";
 
 class RandomFact extends Component {
   componentDidMount() {
     this.props.dispatch(fetchRandomFact);
+    this.props.dispatch(fetchRandomQuote);
   }
 
   render() {
@@ -30,7 +31,8 @@ class RandomFact extends Component {
 
 function mapStateToProps(reduxState) {
   return {
-    randomFact: reduxState.randomFact
+    randomFact: reduxState.randomFact,
+    randomQuote: reduxState.randomQuote
   };
 }
 
