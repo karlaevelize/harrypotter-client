@@ -26,6 +26,11 @@ class Toolbar extends Component {
               Sorting Hat
             </Link>
           </li>
+          <li>
+            <Link className="a" to="/random">
+              Facts & Quotes
+            </Link>
+          </li>
         </ul>
       </div>
     );
