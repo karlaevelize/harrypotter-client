@@ -6,6 +6,7 @@ import Toolbar from "./components/Toolbar";
 import LoginPage from "./components/LoginPage";
 import SignUpPage from "./components/SignUpPage";
 import ChatPage from "./components/ChatPage";
+import QuizPage from "./components/QuizPage";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignUpPage} />
           <Route path="/chat" component={ChatPage} />
+          <Route path="/quiz" component={QuizPage} />
         </Switch>
       </div>
     );

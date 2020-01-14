@@ -2,7 +2,6 @@ import "../pages.css";
 import React from "react";
 import { connect } from "react-redux";
 import { login } from "../store/login/actions";
-import { Link } from "react-router-dom";
 
 class LoginPage extends React.Component {
   state = {
