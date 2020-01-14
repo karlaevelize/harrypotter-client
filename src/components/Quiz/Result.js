@@ -8,7 +8,9 @@ export class Result extends React.Component {
   render() {
     return (
       <div>
-        Congratulations! You are a <strong>{this.props.quizResult}</strong>!
+        <h2>
+          Congratulations! You are a <strong>{this.props.quizResult}</strong>!
+        </h2>
       </div>
     );
   }
