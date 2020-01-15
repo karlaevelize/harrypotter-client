@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import update from "react-addons-update";
 import quizQuestions from "../quizQuestions";
+import RandomQuote from "./RandomFacts";
 import Quiz from "./Quiz/Quiz";
 import Result from "./Quiz/Result";
 import Utility from "../Utility";

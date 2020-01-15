@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import Toolbar from "./components/Toolbar";
+import Footer from "./components/Footer";
 import LoginPage from "./components/LoginPage";
 import SignUpPage from "./components/SignUpPage";
 import ChatPage from "./components/ChatPage";
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/quiz" component={QuizPage} />
           <Route path="/random" component={RandomFacts} />
         </Switch>
+        <Footer />
       </div>
     );
   }
