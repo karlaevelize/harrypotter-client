@@ -54,6 +54,7 @@ class ChatPage extends Component {
           <p>
             <input
               name="name"
+              placeholder="name"
               onChange={this.onChange}
               type="text"
               value={this.state.name}
@@ -62,6 +63,7 @@ class ChatPage extends Component {
           <p>
             <input
               name="text"
+              placeholder="text"
               onChange={this.onChange}
               type="text"
               value={this.state.text}
