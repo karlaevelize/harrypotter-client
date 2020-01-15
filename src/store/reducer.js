@@ -5,6 +5,7 @@ import chatReducer from "./chat/reducer";
 import randomFactReducer from "./random-facts/reducer";
 import randomQuoteReducer from "./random-quotes/reducer";
 import potterNewsReducer from "./potternews/reducer";
+import onePotterNewReducer from "./onepotternew/reducer";
 
 export default combineReducers({
   login: loginReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
   chat: chatReducer,
   randomFact: randomFactReducer,
   randomQuote: randomQuoteReducer,
-  potterNews: potterNewsReducer
+  potterNews: potterNewsReducer,
+  onePotterNew: onePotterNewReducer
 });

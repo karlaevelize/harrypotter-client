@@ -13,12 +13,14 @@ class Homepage extends Component {
       <div>
         <h1 className="potter">Potter News!</h1>
         {this.props.potterNews
-          ? this.props.potterNews.map(potterNew => {
+          ? this.props.potterNews.map(potternew => {
               return (
-                <div key={potterNew.id} className="column">
-                  <h2>"{potterNew.title}"</h2>
-                  <img src={potterNew.imgUrl} />
-                  <p>"{potterNew.resume}"</p>
+                <div key={potternew.id} className="column">
+                  <Link className="links" to={`/potternew/${potternew.id}`}>
+                    <h2>"{potternew.title}"</h2>
+                    <img className="image1" src={potternew.imgUrl} />
+                    <p>"{potternew.resume}"</p>
+                  </Link>
                 </div>
               );
             })
