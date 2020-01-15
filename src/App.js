@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import Toolbar from "./components/Toolbar";
 import Footer from "./components/Footer";
+import Homepage from "./components/Homepage";
 import LoginPage from "./components/LoginPage";
 import SignUpPage from "./components/SignUpPage";
 import ChatPage from "./components/ChatPage";
@@ -16,6 +17,7 @@ class App extends Component {
       <div className="App">
         <Toolbar />
         <Switch>
+          <Route exact path="/" component={Homepage} />
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignUpPage} />
           <Route path="/chat" component={ChatPage} />
