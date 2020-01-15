@@ -4,7 +4,11 @@ class Footer extends Component {
   render() {
     return (
       <div class="footer">
-        <p>Codaisseur Project - Karla Evelize</p>
+        <p>
+          The Daily Potter is an unofficial Harry Potter fansite. HARRY POTTER,
+          characters, names, and all related indicia are trademarks of Warner
+          Bros. © 2001 – 2020.
+        </p>
       </div>
     );
   }
