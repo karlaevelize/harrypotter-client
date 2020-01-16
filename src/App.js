@@ -11,6 +11,7 @@ import SignUpPage from "./components/SignUpPage";
 import ChatPage from "./components/ChatPage";
 import QuizPage from "./components/QuizPage";
 import RandomFacts from "./components/RandomFacts";
+import RealHomepage from "./components/RealHomepage";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
       <div className="App">
         <Toolbar />
         <Switch>
+          <Route exact path="/" component={RealHomepage} />
           <Route exact path="/potternew" component={Homepage} />
           <Route path="/potternew/:id" component={OnePotterNew} />
           <Route path="/login" component={LoginPage} />
