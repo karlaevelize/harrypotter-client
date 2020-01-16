@@ -106,6 +106,7 @@ button {
   background-color: wheat;
   opacity: 0.85;
   width: 27%;
+  padding: 5px;
   float: left;
   border-radius: 1cm;
   margin-top: 1cm;
@@ -145,4 +146,14 @@ button {
   margin-left: 1cm;
   margin-right: 1cm;
   margin-bottom: 2cm;
+}
+
+.homepage {
+  background-color: black;
+  /* opacity: 0.85; */
+  margin: 10%;
+  padding: 5px;
+  /* border-radius: 1cm; */
+  float: center;
+  color: white;
 }
