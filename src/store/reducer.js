@@ -4,11 +4,17 @@ import signUpReducer from "./signup/reducer";
 import chatReducer from "./chat/reducer";
 import randomFactReducer from "./random-facts/reducer";
 import randomQuoteReducer from "./random-quotes/reducer";
+import potterNewsReducer from "./potternews/reducer";
+import onePotterNewReducer from "./onepotternew/reducer";
+import createCommentReducer from "./comment/reducer";
 
 export default combineReducers({
   login: loginReducer,
   signup: signUpReducer,
   chat: chatReducer,
   randomFact: randomFactReducer,
-  randomQuote: randomQuoteReducer
+  randomQuote: randomQuoteReducer,
+  potterNews: potterNewsReducer,
+  onePotterNew: onePotterNewReducer,
+  createComment: createCommentReducer
 });
