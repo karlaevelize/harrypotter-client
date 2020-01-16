@@ -22,6 +22,16 @@ class Toolbar extends Component {
             </Link>
           </li>
           <li>
+            <Link className="a" to="/">
+              Daily Potter <b>ϟ</b>
+            </Link>
+          </li>
+          <li>
+            <Link className="a" to="/potternew">
+              Potter News
+            </Link>
+          </li>
+          <li>
             <Link className="a" to="/quiz">
               Sorting Hat
             </Link>

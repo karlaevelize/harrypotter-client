@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import fetchOnePotterNew from "../store/onepotternew/actions";
+import CommentForm from "./CommentForm";
 
 class OnePotterNew extends Component {
   componentDidMount() {
@@ -9,7 +10,6 @@ class OnePotterNew extends Component {
   }
 
   render() {
-    console.log("PROPS", this.props.onePotterNew);
     return (
       <div>
         <div className="onenew">
@@ -24,6 +24,7 @@ class OnePotterNew extends Component {
           )}
         </div>
         <h1 style={{ color: "wheat" }}>Comments</h1>
+
         <div className="comment">
           {this.props.onePotterNew.comments
             ? this.props.onePotterNew.comments.map(comment => {
@@ -38,6 +39,7 @@ class OnePotterNew extends Component {
               })
             : "Loading..."}
         </div>
+        <CommentForm />
       </div>
     );
   }

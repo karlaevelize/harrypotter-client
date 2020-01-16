@@ -6,6 +6,7 @@ import randomFactReducer from "./random-facts/reducer";
 import randomQuoteReducer from "./random-quotes/reducer";
 import potterNewsReducer from "./potternews/reducer";
 import onePotterNewReducer from "./onepotternew/reducer";
+import createCommentReducer from "./comment/reducer";
 
 export default combineReducers({
   login: loginReducer,
@@ -14,5 +15,6 @@ export default combineReducers({
   randomFact: randomFactReducer,
   randomQuote: randomQuoteReducer,
   potterNews: potterNewsReducer,
-  onePotterNew: onePotterNewReducer
+  onePotterNew: onePotterNewReducer,
+  createComment: createCommentReducer
 });

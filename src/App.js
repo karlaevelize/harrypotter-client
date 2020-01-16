@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
         <Toolbar />
         <Switch>
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/potternew" component={Homepage} />
           <Route path="/potternew/:id" component={OnePotterNew} />
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignUpPage} />
